@@ -17,13 +17,9 @@ const userSchema = new mongoose.Schema({
         lowercase: true
     },
     password: {
-        type: String,
+        type: mongoose.Schema.Types.Mixed,
         required: true
     },
-    role: {
-        type: Number,
-        auto: true,
-    }
 },
 {timestamps: true}
 )
